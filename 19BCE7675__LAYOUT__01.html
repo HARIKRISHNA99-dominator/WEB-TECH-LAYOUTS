@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <title>Layout_01</title>
+
+    <style>
+        html{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .con{
+        height: 100vh;
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(5,1fr) ;
+        grid-template-rows: repeat(5,1fr);
+        grid-gap: 5px;
+
+    }
+    .cl{
+        font-size: 20px;
+        background-color: rgb(248, 224, 7);
+        padding: 10px;
+        color: rgb(20, 10, 10);
+        border: 2.5px solid white;
+        
+
+    }
+    #b1{
+        grid-column: span 5;
+        height: 100px;
+    }
+    #b2{
+        grid-column: span 3;
+        grid-row: span 3;
+
+    }
+    #b3{
+        grid-row: span 3;
+
+
+    }
+    #b4{
+        grid-row: span 3;
+
+    }
+    #b5{
+        grid-column: span 5;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="con">
+            <div class="cl" id="b1">Header</div>
+        <div class="cl" id="b2">Article</div>
+        <div class="cl" id="b3">Nav</div>
+        <div class="cl" id="b4">Ads</div>
+        <div class="cl" id="b5">Footer</div>
+      
+
+    
+</body>
+</html>

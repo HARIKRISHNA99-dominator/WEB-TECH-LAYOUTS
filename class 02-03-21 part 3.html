@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <title>Document</title>
+
+    <style>
+        .con{
+        height: 100vh;
+        background-color: teal;
+        display: grid;
+        /* our require ment is 6 columns and 3 rows*/
+        grid-template-columns: repeat(6,1fr) ;/column width/
+        /* fr is the fraction, which will cover the whole page , ,and give them according equally*/
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 10px;
+
+    }
+    .cl{
+        font-size: 20px;
+        background-color: white;
+        padding: 20px;
+        color: rgb(20, 10, 10);
+        border: 3px solid rgb(38, 74, 235);
+
+
+    }
+    #b1{
+        grid-column: span 2;
+    }
+    #b2{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    #b3{
+        grid-row: span 2;
+
+
+    }
+    #b9{
+        grid-column: span 2;
+    }
+    #b10{
+        grid-column: span 2;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="con">
+    
+
+
+
+        <div class="cl" id="b1">1</div>
+        <div class="cl" id="b2">2</div>
+        <div class="cl" id="b3">3</div>
+        <div class="cl" id="b4">4</div>
+        <div class="cl" id="b5">5</div>
+        <div class="cl" id="b6">6</div>
+        <div class="cl" id="b7">7</div>
+        <div class="cl" id="b8">8</div>
+        <div class="cl" id="b9">9</div>
+        <div class="cl" id="b10">10</div>
+        <div class="cl" id="b11">11</div>
+
+    
+</body>
+</html>

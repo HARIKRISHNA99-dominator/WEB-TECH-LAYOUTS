@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <title>Layout_04</title>
+
+    <style>
+        html{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 10px;
+           
+
+
+        }
+        
+        .con{
+        height: 100vh;
+        background-color: darkred;
+        display: grid;
+        grid-template-columns: repeat(6,1fr) ;
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 5px;
+
+    }
+    .cl{
+        font-size: 20px;
+        padding: 10px;
+        color: rgb(20, 10, 10);
+        border: 2.5px solid white;
+        background-color: white;
+        text-align: center;
+        margin: 10px;
+        font-weight: bolder;
+        display: flex;
+           align-items: center;
+           justify-content: center;
+
+        
+
+    }
+    #b1{
+        grid-column: span 2;
+      
+
+    }
+    #b2{
+        grid-column: span 2;
+        grid-row: span 2;    /* 4 */
+      
+
+
+
+
+    }
+    #b3{
+        grid-row: span 2;
+         /* 5 (down) */
+     
+
+    }
+    #b9{
+        grid-column: span 2;
+       /* 9 */
+
+
+
+    }
+    #b10{
+        grid-column: span 2;
+         /* 10 */
+       
+
+
+    }
+    </style>
+</head>
+<body>
+    <div class="con">
+            <div class="cl" id="b1">1</div>
+        <div class="cl" id="b2">4</div>
+        <div class="cl" id="b3">5</div>
+        <div class="cl" id="b4">6</div>
+        <div class="cl" id="b5">2</div>
+        <div class="cl" id="b6">3</div>
+        <div class="cl" id="b7">7</div>
+        <div class="cl" id="b8">8</div>
+        <div class="cl" id="b9">9</div>
+        <div class="cl" id="b10">10</div>
+        <div class="cl" id="b11">11</div>
+
+
+    
+    
+      
+
+    
+</body>
+</html>

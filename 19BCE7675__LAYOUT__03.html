@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Layout 1</title>
+
+
+    <style>
+        .con{
+          height: 100px;
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(4,2fr);
+            grid-template-rows: repeat(4,1fr);
+            grid-gap: 2px ;
+        }
+        .cl{
+            font-size: 20px;
+            padding-top: ;
+            
+            text-align: center;
+            }
+
+            #b1{
+                height: 5vh;
+                grid-column: span 5;
+               background-color: mediumaquamarine;
+                
+            }
+            #b2{
+                grid-row: span 3;
+                grid-column: span 1;
+                background-color: rgb(173, 230, 230);
+            }
+            #b3{
+                height: 20vh;
+                grid-column: span 4;
+                background-color: rgb(135, 246, 250);
+            }
+            #b4{
+                height: 20vh;
+                grid-row: span 1;
+                background-color: lightgreen;
+            }
+            #b5{
+                height: 20vh;
+                grid-row: span 1;
+                background-color: rgb(144, 238, 222);
+            }
+            #b6{
+                height: 20vh;
+                grid-row: span 1;
+                background: rgb(144, 238, 194);
+            }
+            #b7{
+
+                grid-column: span 4;
+                height: 6vh;
+background-color: lightseagreen;
+                
+
+            }
+
+
+
+
+    </style>
+</head>
+<div class="con">
+
+        <div class="cl" id="b1">NAVBAR</div>
+        <div class="cl" id="b2">SIDEBAR</div>
+        <div class="cl" id="b3">MAIN</div>
+        <div class="cl" id="b4">CONTENT1</div>
+        <div class="cl" id="b5">CONTENT2</div>
+        <div class="cl" id="b6">CONTENT3</div>
+        <div class="cl" id="b7">FOOTER</div>
+        
+
+</div>
+
+
+
+
+<body>
+    
+</body>
+</html>

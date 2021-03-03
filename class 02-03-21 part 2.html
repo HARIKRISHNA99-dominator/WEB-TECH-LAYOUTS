@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+        .con{
+          
+            background-color: blueviolet;
+            display: grid;
+
+            grid-template-columns:1FR 2fr ;
+            grid-template-rows: 1fr 5fr 1fr;
+            height: 100vh;
+
+        }
+        .cl{
+            font-size: 25px;
+            background-color: brown;
+            color: cornsilk;
+            border: 3px solid red;
+
+            /* height=10px */
+           
+        }
+        #b1{
+            grid-column: span 2;
+        }
+        #b2{
+            grid-row: span 2;
+        }
+        #b1{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        }
+
+        a{
+            margin: 10px;
+            }
+
+      
+        </style>
+
+</head>
+<body>
+    
+    <div class="con">
+
+        <div class="cl" id="b1">
+
+            <a href="">Home</a>
+            <a href="">me</a>
+            <a href="">yoyo</a>
+
+
+        <div class="cl" id="b1">1</div>
+        <div class="cl" id="b2">2</div>
+        <div class="cl" id="b3">3</div>
+        <div class="cl" id="b4">4</div>
+
+
+        
+
+
+    </div>
+</body>
+</html>
